@@ -29,7 +29,7 @@ namespace DataStructures
             // Console.WriteLine(SearchInRotatedArrayWithDuplicates.FindPivot(new int[] { 18, 18, 8, 8, 9, 11, 16, 17, 18 }));
             // Console.WriteLine(MatchPrefix.LongestPalindrome("aaaAaaaa"));
             // Console.WriteLine(SearchInRotatedArrayWithDuplicates.FindPivot(mountainArr));
-            Console.WriteLine(MajorityElementIII.FindInRotated(6537421));
+            Console.WriteLine(MajorityElementIII.FindGreater(2147483486));
         }
 
         public static (bool, int?) BinarySearch(int element, int[] inputArr) 

@@ -8,23 +8,27 @@ namespace DataStructures
 {
     public static class MajorityElementIII
     {
-        public static int FindInRotated(int n) 
+        public static int FindGreater(int n) 
         {
             var nums = n.ToString().ToCharArray().Select(elem => int.Parse(elem.ToString())).ToArray();
-            Console.WriteLine(nums.Length);
             int i = nums.Length - 2;
             var stopLocation = -1;
 
-            for (i = nums.Length - 2; i > 0; i--) 
+            for (i = nums.Length - 2; i >= 0; i--) 
             {
-                if (nums[i - 1] < nums[i]) 
+                if (nums[i + 1] <= nums[i])
                 {
-                    stopLocation = i - 1;
+                    continue;
+                }
+                else 
+                {
+                    stopLocation = i;
                     break;
                 }
             }
+            Console.WriteLine($"stop location is {stopLocation}");
 
-            if (i == 0) 
+            if (i == -1) 
             {
                 return -1;
             }
@@ -46,12 +50,40 @@ namespace DataStructures
             nums[swapPos] = nums[stopLocation];
             nums[stopLocation] = temp;
 
-            
-            
+            Console.WriteLine("After swapping");
+
+            foreach (var item in nums)
+            {
+                Console.Write(item);
+            }
+
+            Console.WriteLine("reversing now");
+
             // revers the rest of the array.
+            ReversePartOfAnArr(nums, i + 1, nums.Length - 1);
 
+            foreach (var item in nums) 
+            {
+                Console.Write(item);
+            }
+            Console.WriteLine();
+            Console.WriteLine(string.Join("", nums));
 
-            return 0;
-        } 
+            return int.TryParse(string.Join("", nums), out int result) ? result: -1;
+        }
+
+        private static void ReversePartOfAnArr(int[] nums, int start, int end) 
+        {
+            while (start < end) 
+            {
+                // swap the num.
+                var temp = nums[start];
+                nums[start] = nums[end];
+                nums[end] = temp;
+
+                start++;
+                end--;
+            }
+        }
     }
 }
