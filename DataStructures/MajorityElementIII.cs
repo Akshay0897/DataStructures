@@ -8,6 +8,17 @@ namespace DataStructures
 {
     public static class MajorityElementIII
     {
+        /*
+        - What this problem wants is finding the next permutation of n
+        - Steps to find the next permuation: 
+        find largest index k such that inp[k] < inp[k+1];
+            if k == -1: return -1
+            else:
+                look for largest index l such that inp[l] > inp[k]
+                swap the two index
+                reverse from k+1 to n.length
+        */
+
         public static int FindGreater(int n) 
         {
             var nums = n.ToString().ToCharArray().Select(elem => int.Parse(elem.ToString())).ToArray();
