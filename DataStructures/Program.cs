@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataStructures.ChainingTechnique;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using static DataStructures.BufferExtensions;
@@ -29,7 +30,12 @@ namespace DataStructures
             // Console.WriteLine(SearchInRotatedArrayWithDuplicates.FindPivot(new int[] { 18, 18, 8, 8, 9, 11, 16, 17, 18 }));
             // Console.WriteLine(MatchPrefix.LongestPalindrome("aaaAaaaa"));
             // Console.WriteLine(SearchInRotatedArrayWithDuplicates.FindPivot(mountainArr));
-            Console.WriteLine(MajorityElementIII.FindGreater(2147483486));
+            // Console.WriteLine(MajorityElementIII.FindGreater(2147483486));
+
+            var utcDate = DateTime.SpecifyKind(DateTimeOffset.UtcNow.DateTime, DateTimeKind.Utc);
+            var localTime = utcDate.ToLocalTime();
+
+            PartitioningArray.PartitionByParity(new int[] { 2, 0 , 2, 1, 0, 0, 2, 0, 1, 1, 1, 2 });
         }
 
         public static (bool, int?) BinarySearch(int element, int[] inputArr) 
