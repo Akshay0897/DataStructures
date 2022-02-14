@@ -123,5 +123,49 @@ namespace DataStructures
                 Console.WriteLine(item);
             }
         }
+
+        public static int Fun(int[] nums)
+        {
+            // Sort array in ascending order.
+            Array.Sort(nums);
+
+            var maxSum = 0;
+            var start = 0;
+            var end = nums.Length - 1;
+
+            while (start < end) 
+            {
+                var p1 = nums[start];
+                var p2 = nums[end];
+                
+                if (p1 + p2 > maxSum) 
+                {
+                    maxSum = p1 + p2;
+                }
+
+                start++;
+                end--;
+            }
+
+            return maxSum;
+        }
+
+        public static int Fun2(int[] tickets, int k)
+        {
+            var totalTimeSpent = 0;
+            while (tickets[k] != 0) 
+            {
+                for (var i = 0; i < tickets.Length; i++) 
+                {
+                    if (tickets[i] != 0 && tickets[k] != 0) 
+                    {
+                        tickets[i]--;
+                        totalTimeSpent++;
+                    }
+                }
+            }
+
+            return totalTimeSpent;
+        }
     }
 }

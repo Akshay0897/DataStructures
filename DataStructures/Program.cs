@@ -1,4 +1,7 @@
-﻿using DataStructures.ChainingTechnique;
+﻿using DataStructures.BitManipulation;
+using DataStructures.ChainingTechnique;
+using DataStructures.HashMap.SlidingWindow;
+using DataStructures.MergeIntervalsPattern;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,7 +38,15 @@ namespace DataStructures
             var utcDate = DateTime.SpecifyKind(DateTimeOffset.UtcNow.DateTime, DateTimeKind.Utc);
             var localTime = utcDate.ToLocalTime();
 
-            PartitioningArray.PartitionByParity(new int[] { 2, 0 , 2, 1, 0, 0, 2, 0, 1, 1, 1, 2 });
+            // [10,16],[2,8],[1,6],[7,12]
+
+            //[[1,1,4],[9,4,9],[9,1,9],[2,3,5],[4,1,5],[10,4,5]]
+
+            //Console.WriteLine(CarPoolingProblem.CarPooling(new int[][] { new int[] { 1, 1, 4 }, new int[] { 9, 4, 9 }, new int[] { 9, 1, 9 }, new int[] { 2, 3, 5 }, 
+            //     new int[] { 4, 1, 5 }, new int[] { 10, 4, 5 } }, 33));
+            // Console.WriteLine(CarPoolingProblem.CarPooling(new int[][] { new int[] { 2, 1, 5 }, new int[] { 3, 5, 7 } }, 3));
+            // Console.WriteLine(ValidPalindromicII.IsValidPalindrom("deeee"));
+            Console.WriteLine(Longest_K_AtMost_Unique_Characters_Substring.GetSubStr("ddacbbaacdedacebb", 3));
         }
 
         public static (bool, int?) BinarySearch(int element, int[] inputArr) 

@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BitManipulation\Find All Numbers Disappeared in an Array.cs" />
+    <Compile Include="BitManipulation\One Missing and One Duplicate.cs" />
+    <Compile Include="BitManipulation\RightMostSetBitMask.cs" />
+    <Compile Include="BitManipulation\Single Number.cs" />
+    <Compile Include="BitManipulation\SingleNumberII.cs" />
+    <Compile Include="BitManipulation\SingleNumberIII.cs" />
     <Compile Include="BufferExtensions.cs" />
     <Compile Include="CeilUsingBinarySearch.cs" />
     <Compile Include="ChainingTechnique\DIsjointInterval.cs" />
@@ -57,16 +63,29 @@
     <Compile Include="ChainingTechnique\PatitionArr.cs" />
     <Compile Include="ChainingTechnique\ProductOfAnArrayItself.cs" />
     <Compile Include="CircularBuffer.cs" />
+    <Compile Include="Find the Duplicate Number.cs" />
     <Compile Include="FindInRotatedArray.cs" />
     <Compile Include="FindPeekElement.cs" />
     <Compile Include="FindPositionInInfiniteArr.cs" />
     <Compile Include="FirstAndLastPositionInSortedArray.cs" />
+    <Compile Include="HashMap\SlidingWindow\Count of all unique substrings with non-repeating characters.cs" />
+    <Compile Include="HashMap\SlidingWindow\Longest K unique characters substring.cs" />
+    <Compile Include="HashMap\SlidingWindow\Longest Substring Without Repeating Characters.cs" />
+    <Compile Include="HashMap\SlidingWindow\Longest_K_AtLeast_Unique_Characters_Substring.cs" />
+    <Compile Include="HashMap\SlidingWindow\Longest_K_AtMost_Unique_Characters_Substring.cs" />
     <Compile Include="IBuffer.cs" />
+    <Compile Include="IntervalListIntersections.cs" />
     <Compile Include="IsLongPressedName.cs" />
     <Compile Include="MajorityElement2.cs" />
     <Compile Include="MajorityElementIII.cs" />
     <Compile Include="MatchPrefix.cs" />
     <Compile Include="MaxSubArraySum.cs" />
+    <Compile Include="MergeIntervals.cs" />
+    <Compile Include="MergeIntervalsPattern\CarPoolingProblem.cs" />
+    <Compile Include="MergeIntervalsPattern\Maximum Swap.cs" />
+    <Compile Include="MergeIntervalsPattern\Minimum Length of String After Deleting Similar Ends.cs" />
+    <Compile Include="MergeIntervalsPattern\MinimumNumberofArrowstoBurstBalloons.cs" />
+    <Compile Include="MergeIntervalsPattern\Non-overlapping Intervals.cs" />
     <Compile Include="PartitioningArray.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -77,6 +96,7 @@
     <Compile Include="Something.cs" />
     <Compile Include="TestAdventOfCode.cs" />
     <Compile Include="TwoSum.cs" />
+    <Compile Include="ValidPalindromicII.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
