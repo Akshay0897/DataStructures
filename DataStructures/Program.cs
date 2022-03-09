@@ -1,7 +1,10 @@
 ﻿using DataStructures.BitManipulation;
 using DataStructures.ChainingTechnique;
+using DataStructures.HashMap.MonotonicQueue;
 using DataStructures.HashMap.SlidingWindow;
 using DataStructures.MergeIntervalsPattern;
+using DataStructures.Stack;
+using DataStructures.Stack.StockSpanner;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -46,7 +49,30 @@ namespace DataStructures
             //     new int[] { 4, 1, 5 }, new int[] { 10, 4, 5 } }, 33));
             // Console.WriteLine(CarPoolingProblem.CarPooling(new int[][] { new int[] { 2, 1, 5 }, new int[] { 3, 5, 7 } }, 3));
             // Console.WriteLine(ValidPalindromicII.IsValidPalindrom("deeee"));
-            Console.WriteLine(Longest_K_AtMost_Unique_Characters_Substring.GetSubStr("ddacbbaacdedacebb", 3));
+
+            //StockSpanner sp = new StockSpanner();
+
+            //// 73,74,75,71,69,72,76,73
+
+            //sp.Next(2);
+            //sp.Next(5);
+            //sp.Next(9);
+            //sp.Next(3);
+            //sp.Next(1);
+            //sp.Next(12);
+            //sp.Next(6);
+            //sp.Next(8);
+            //sp.Next(7);
+
+            //Console.WriteLine(MaximalRectangle.GetMaximalRectangle(new char[][]
+            //{ 
+            //    new char[] { '1', '0', '1', '0', '0' }, 
+            //    new char[] { '1', '1', '1', '1', '1' },
+            //    new char[] { '1', '1', '1', '1', '1' },
+            //    new char[] { '1', '0', '0', '1', '0' } 
+            //}));
+
+            Console.WriteLine(Sliding_Window_Maximum.MaxSlidingWindowOptimized(new int[] { 4, 2, 0, 3, 2, 5 }, 2));
         }
 
         public static (bool, int?) BinarySearch(int element, int[] inputArr) 
