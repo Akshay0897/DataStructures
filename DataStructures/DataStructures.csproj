@@ -68,6 +68,7 @@
     <Compile Include="FindPeekElement.cs" />
     <Compile Include="FindPositionInInfiniteArr.cs" />
     <Compile Include="FirstAndLastPositionInSortedArray.cs" />
+    <Compile Include="HashMap\Find All Lonely Numbers in the Array.cs" />
     <Compile Include="HashMap\MonotonicQueue\132 Pattern.cs" />
     <Compile Include="HashMap\MonotonicQueue\DailyTemprature.cs" />
     <Compile Include="HashMap\MonotonicQueue\Largest Rectangle in Histogram.cs" />
@@ -80,6 +81,7 @@
     <Compile Include="HashMap\SlidingWindow\Container With Most Water.cs" />
     <Compile Include="HashMap\SlidingWindow\Count of all unique substrings with non-repeating characters.cs" />
     <Compile Include="HashMap\SlidingWindow\Find All Anagrams in a String.cs" />
+    <Compile Include="HashMap\SlidingWindow\Frequency of the Most Frequent Element.cs" />
     <Compile Include="HashMap\SlidingWindow\Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit.cs" />
     <Compile Include="HashMap\SlidingWindow\Longest K unique characters substring.cs" />
     <Compile Include="HashMap\SlidingWindow\Longest Repeating Character Replacement.cs" />
@@ -89,10 +91,16 @@
     <Compile Include="HashMap\SlidingWindow\Longest_K_AtMost_Unique_Characters_Substring.cs" />
     <Compile Include="HashMap\SlidingWindow\Max Consecutive Ones III.cs" />
     <Compile Include="HashMap\SlidingWindow\Max Consecutive Ones.cs" />
+    <Compile Include="HashMap\SlidingWindow\Minimum Number of Flips to Make the Binary String Alternating.cs" />
     <Compile Include="HashMap\SlidingWindow\MinimumWindowSubstring.cs" />
     <Compile Include="HashMap\SlidingWindow\Permuation_of_string.cs" />
     <Compile Include="HashMap\SlidingWindow\ShortestSubArrayWithSumAtLeastK.cs" />
     <Compile Include="HashMap\SlidingWindow\Sliding Window Maximum.cs" />
+    <Compile Include="heaps\KLargestElements.cs" />
+    <Compile Include="heaps\Kth Largest Element in an Array.cs" />
+    <Compile Include="heaps\NearlySortedArray.cs" />
+    <Compile Include="heaps\PriorityQueue.cs" />
+    <Compile Include="heaps\Top K Frequent Elements.cs" />
     <Compile Include="IBuffer.cs" />
     <Compile Include="IntervalListIntersections.cs" />
     <Compile Include="IsLongPressedName.cs" />
@@ -119,6 +127,9 @@
     <Compile Include="Stack\Replace Elements with Greatest Element on Right Side.cs" />
     <Compile Include="Stack\StockSpanner.cs" />
     <Compile Include="TestAdventOfCode.cs" />
+    <Compile Include="Two pointer\Rearrange Array Elements by Sign.cs" />
+    <Compile Include="Two pointer\SortArrayByParityII.cs" />
+    <Compile Include="Two pointer\SortByParityI.cs" />
     <Compile Include="TwoSum.cs" />
     <Compile Include="ValidPalindromicII.cs" />
   </ItemGroup>

@@ -1,10 +1,13 @@
 ﻿using DataStructures.BitManipulation;
 using DataStructures.ChainingTechnique;
+using DataStructures.HashMap;
 using DataStructures.HashMap.MonotonicQueue;
 using DataStructures.HashMap.SlidingWindow;
+using DataStructures.heaps;
 using DataStructures.MergeIntervalsPattern;
 using DataStructures.Stack;
 using DataStructures.Stack.StockSpanner;
+using DataStructures.Two_pointer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -72,7 +75,7 @@ namespace DataStructures
             //    new char[] { '1', '0', '0', '1', '0' } 
             //}));
 
-            Console.WriteLine(Sliding_Window_Maximum.MaxSlidingWindowOptimized(new int[] { 4, 2, 0, 3, 2, 5 }, 2));
+            NearlySortedArray.FindKthLargest(new int[] { 1,1, 10, 10 }, 1, 9);
         }
 
         public static (bool, int?) BinarySearch(int element, int[] inputArr) 
