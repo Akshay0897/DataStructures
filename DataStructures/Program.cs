@@ -75,7 +75,9 @@ namespace DataStructures
             //    new char[] { '1', '0', '0', '1', '0' } 
             //}));
 
-            NearlySortedArray.FindKthLargest(new int[] { 1,1, 10, 10 }, 1, 9);
+            // [3,3],[5,-1],[-2,4]
+            Console.WriteLine(KClosestPointsToOrigin.KClosest(new int[][] { new int[] { 3, 3 }, new int[]{ 5, 1 }, new int[] { -2, 4 } }, 2));
+            Console.ReadLine();
         }
 
         public static (bool, int?) BinarySearch(int element, int[] inputArr) 

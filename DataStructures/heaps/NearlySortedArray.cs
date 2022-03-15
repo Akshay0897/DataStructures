@@ -7,45 +7,38 @@ using System.Threading.Tasks;
 namespace DataStructures.heaps
 {
     // problem link: https://www.geeksforgeeks.org/nearly-sorted-algorithm/
+
     public static class NearlySortedArray
     {
-        public static int[] FindKthLargest(int[] nums, int k, int x)
+        public static int[] FindKthLargest(int[] arr, int k, int x)
         {
-            PriorityQueue<Pair> maxHeap = new PriorityQueue<Pair>(isdesc: false);
+            Heap<Pair> maxHeap = new Heap<Pair>(1, isMaxHeap: true);
             var result = new List<int>();
 
-            for (int i = 0; i < nums.Length; i++)
+            for (int i = 0; i < arr.Length; i++)
             {
-                maxHeap.Enqueue(new Pair(Math.Abs(nums[i] - x), nums[i]));
+                maxHeap.Insert(new Pair(Math.Abs(arr[i] - x), arr[i]));
 
                 if (maxHeap.Count > k)
                 {
-                    // Console.WriteLine(maxHeap.Peek().value);
-                    maxHeap.Dequeue();
+                    maxHeap.Remove();
                 }
             }
 
             while (maxHeap.Count > 0) 
             {
-                var curritem = maxHeap.Dequeue();
-                Console.WriteLine(curritem.value);
+                var curritem = maxHeap.Remove();
                 result.Add(curritem.value);
             }
 
             var resultentArr = result.ToArray();
             Array.Sort(resultentArr);
 
+            for (int i = 0; i < result.Count; i++)
+            {
+                Console.WriteLine(resultentArr[i]);
+            }
             return resultentArr;
-
-            //for (int i = 0; i < k; i++) 
-            //{
-            //    result.Add(maxHeap.Dequeue().value);
-            //}
-
-            //for (int i = 0; i < result.Count; i++)
-            //{
-            //    Console.WriteLine(result[i]);
-            //}
         }
     }
 
@@ -59,16 +52,16 @@ namespace DataStructures.heaps
             this.diff = diff;
             this.value = value;
         }
-
+        
         public int CompareTo(Pair other) 
         {
             if (diff == other.diff)
             {
-                return Math.Min(value, other.value);
+                return value.CompareTo(other.value);
             }
             else 
             {
-                return Math.Max(diff, other.diff);
+                return diff.CompareTo(other.diff);
             }
         }
     }

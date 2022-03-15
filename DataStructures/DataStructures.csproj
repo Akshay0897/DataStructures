@@ -96,11 +96,16 @@
     <Compile Include="HashMap\SlidingWindow\Permuation_of_string.cs" />
     <Compile Include="HashMap\SlidingWindow\ShortestSubArrayWithSumAtLeastK.cs" />
     <Compile Include="HashMap\SlidingWindow\Sliding Window Maximum.cs" />
+    <Compile Include="heaps\KClosestPointsToOrigin.cs" />
     <Compile Include="heaps\KLargestElements.cs" />
     <Compile Include="heaps\Kth Largest Element in an Array.cs" />
+    <Compile Include="heaps\MaxHeap.cs" />
     <Compile Include="heaps\NearlySortedArray.cs" />
     <Compile Include="heaps\PriorityQueue.cs" />
+    <Compile Include="heaps\Sort Array by Increasing Frequency.cs" />
+    <Compile Include="heaps\Sort Characters By Frequency.cs" />
     <Compile Include="heaps\Top K Frequent Elements.cs" />
+    <Compile Include="heaps\Top K Frequent Words.cs" />
     <Compile Include="IBuffer.cs" />
     <Compile Include="IntervalListIntersections.cs" />
     <Compile Include="IsLongPressedName.cs" />
