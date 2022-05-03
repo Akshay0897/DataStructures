@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BinarySearch\2DArrayBinarySearch.cs" />
+    <Compile Include="BinarySearch\Find K-th Smallest Pair Distance.cs" />
+    <Compile Include="BinarySearch\K-th Smallest Prime Fraction.cs" />
+    <Compile Include="BinarySearch\Kth Smallest Number in Multiplication Table.cs" />
+    <Compile Include="BinarySearch\KthSmallestInSortedMatrix.cs" />
+    <Compile Include="BinarySearch\Subarray Sum Equals K.cs" />
     <Compile Include="BitManipulation\Find All Numbers Disappeared in an Array.cs" />
     <Compile Include="BitManipulation\One Missing and One Duplicate.cs" />
     <Compile Include="BitManipulation\RightMostSetBitMask.cs" />
@@ -68,6 +74,7 @@
     <Compile Include="FindPeekElement.cs" />
     <Compile Include="FindPositionInInfiniteArr.cs" />
     <Compile Include="FirstAndLastPositionInSortedArray.cs" />
+    <Compile Include="HashMap\ContiguousArray.cs" />
     <Compile Include="HashMap\Find All Lonely Numbers in the Array.cs" />
     <Compile Include="HashMap\MonotonicQueue\132 Pattern.cs" />
     <Compile Include="HashMap\MonotonicQueue\DailyTemprature.cs" />
@@ -77,6 +84,7 @@
     <Compile Include="HashMap\MonotonicQueue\MonotonicArray.cs" />
     <Compile Include="HashMap\MonotonicQueue\Trapping Rain Water.cs" />
     <Compile Include="HashMap\MonotonicQueue\TrappingRainWaterII.cs" />
+    <Compile Include="HashMap\RabbitsInForrest.cs" />
     <Compile Include="HashMap\SlidingWindow\209. Minimum Size Subarray Sum.cs" />
     <Compile Include="HashMap\SlidingWindow\Container With Most Water.cs" />
     <Compile Include="HashMap\SlidingWindow\Count of all unique substrings with non-repeating characters.cs" />
@@ -96,6 +104,7 @@
     <Compile Include="HashMap\SlidingWindow\Permuation_of_string.cs" />
     <Compile Include="HashMap\SlidingWindow\ShortestSubArrayWithSumAtLeastK.cs" />
     <Compile Include="HashMap\SlidingWindow\Sliding Window Maximum.cs" />
+    <Compile Include="HashMap\Subarray Sums Divisible by K.cs" />
     <Compile Include="heaps\KClosestPointsToOrigin.cs" />
     <Compile Include="heaps\KLargestElements.cs" />
     <Compile Include="heaps\Kth Largest Element in an Array.cs" />

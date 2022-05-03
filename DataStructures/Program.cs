@@ -1,4 +1,5 @@
-﻿using DataStructures.BitManipulation;
+﻿using DataStructures.BinarySearch;
+using DataStructures.BitManipulation;
 using DataStructures.ChainingTechnique;
 using DataStructures.HashMap;
 using DataStructures.HashMap.MonotonicQueue;
@@ -76,7 +77,9 @@ namespace DataStructures
             //}));
 
             // [3,3],[5,-1],[-2,4]
-            Console.WriteLine(KClosestPointsToOrigin.KClosest(new int[][] { new int[] { 3, 3 }, new int[]{ 5, 1 }, new int[] { -2, 4 } }, 2));
+
+            // [1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]
+            Console.WriteLine(ContiguousArray.LongestContiguousArray(new int[] {0, 1, 0, 0}));
             Console.ReadLine();
         }
 
