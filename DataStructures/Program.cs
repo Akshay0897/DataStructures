@@ -79,7 +79,7 @@ namespace DataStructures
             // [3,3],[5,-1],[-2,4]
 
             // [1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]
-            Console.WriteLine(ContiguousArray.LongestContiguousArray(new int[] {0, 1, 0, 0}));
+            Console.WriteLine(Find_Original_Array_From_Doubled_Array.IsGoodArray(new int[] { 1, 3, 4, 2, 6, 8 }));
             Console.ReadLine();
         }
 

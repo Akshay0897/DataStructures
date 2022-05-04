@@ -74,8 +74,10 @@
     <Compile Include="FindPeekElement.cs" />
     <Compile Include="FindPositionInInfiniteArr.cs" />
     <Compile Include="FirstAndLastPositionInSortedArray.cs" />
+    <Compile Include="HashMap\ArrayOfDoubledPairs.cs" />
     <Compile Include="HashMap\ContiguousArray.cs" />
     <Compile Include="HashMap\Find All Lonely Numbers in the Array.cs" />
+    <Compile Include="HashMap\Find Original Array From Doubled Array.cs" />
     <Compile Include="HashMap\MonotonicQueue\132 Pattern.cs" />
     <Compile Include="HashMap\MonotonicQueue\DailyTemprature.cs" />
     <Compile Include="HashMap\MonotonicQueue\Largest Rectangle in Histogram.cs" />
